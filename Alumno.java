@@ -13,12 +13,14 @@ public class Alumno {
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
         if(nombreCompleto.length() < 3){
             System.out.println("!ERROR¡ Nombre muy corto");
+            nombre =nombreCompleto + "***";
         }
         else{
             nombre = nombreCompleto;
         }
-        if(numeroMatriculaAlumno.length() < 3){
+        if(numeroMatriculaAlumno.length() < 4){
             System.out.println("!ERROR¡ Nº de matricula muy corto");
+            numeroMatricula = numeroMatriculaAlumno + "****";
         }
         else{
             numeroMatricula = numeroMatriculaAlumno;
@@ -52,14 +54,14 @@ public class Alumno {
      * en su cuenta de Github en formato de 7 caracateres
      */
     public void getNombreUsuarioGithub() {
-        if (nombre.length() < 3){
+        /*if (nombre.length() < 3){
             System.out.println("ERROR Usuario muy corto");
         }
         else if (numeroMatricula.length() < 4){
             System.out.println("ERROR Matricula muy corta");
         }
-        else{
+        else{*/
             System.out.println(nombre.substring(0, 3) + numeroMatricula.substring(0, 4));
-        }
+        //}
     }
 }
