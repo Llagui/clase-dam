@@ -51,7 +51,7 @@ public class Alumno {
     
     /**
      * Devuelve el nombre de usuario que el alumno debe configurar
-     * en su cuenta de Github en formato de 7 caracateres
+     * en la cuenta de Github en formato de 7 caracateres
      */
     public void getNombreUsuarioGithub() {
         /*if (nombre.length() < 3){
