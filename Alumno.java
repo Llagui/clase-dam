@@ -12,10 +12,10 @@ public class Alumno {
      */
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
         if(nombreCompleto.length() < 3){
-            System.out.println("!ERROR¡ Nombre muy corto");
+            System.out.println("¡ERROR! Nombre muy corto");
         }
         if(numeroMatriculaAlumno.length() < 4){
-            System.out.println("!ERROR¡ Nº de matricula muy corto");
+            System.out.println("¡ERROR! Nº de matricula muy corto");
         }
         edad = edadAlumno;
         nombre = nombreCompleto;
@@ -50,13 +50,12 @@ public class Alumno {
     public void getNombreUsuarioGithub() {
         int error1 = 0;
         int error2 = 0;
+        
         if (nombre.length() < 3){
-            System.out.println("ERROR Usuario muy corto");
             error1 = 1;
         }
         
         if (numeroMatricula.length() < 4){
-            System.out.println("ERROR Matricula muy corta");
             error2 = 1;
         }
         
