@@ -13,19 +13,13 @@ public class Alumno {
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
         if(nombreCompleto.length() < 3){
             System.out.println("!ERROR¡ Nombre muy corto");
-            nombre = nombreCompleto ;
-        }
-        else{
-            nombre = nombreCompleto;
         }
         if(numeroMatriculaAlumno.length() < 4){
             System.out.println("!ERROR¡ Nº de matricula muy corto");
-            numeroMatricula = numeroMatriculaAlumno;
-        }
-        else{
-            numeroMatricula = numeroMatriculaAlumno;
         }
         edad = edadAlumno;
+        nombre = nombreCompleto;
+        numeroMatricula = numeroMatriculaAlumno;
     }
 
     /**
