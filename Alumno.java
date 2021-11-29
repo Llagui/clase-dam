@@ -42,36 +42,43 @@ public class Alumno {
     public void imprimeDetalles() {
         System.out.println(nombre + " (" + numeroMatricula + ") - " + edad + " años");
     }
-
+    
+    /**
+     * obtenemos detalles del alumno
+     */
+    public String getDetalles() {
+        return nombre + " (" + numeroMatricula + ") - " + edad + " años";
+    }
+    
     /**
      * Devuelve el nombre de usuario que el alumno debe configurar
      * en la cuenta de Github en formato de 7 caracateres
      */
     public void getNombreUsuarioGithub() {
-        int error1 = 0;
-        int error2 = 0;
+        boolean error1 = false;
+        boolean error2 = false;
         
         if (nombre.length() < 3){
-            error1 = 1;
+            error1 = true;
         }
         
         if (numeroMatricula.length() < 4){
-            error2 = 1;
+            error2 = true;
         }
         
-        if(error1 == 1){
-            if(error2 == 0){
+        if(error1 == true){
+            if(error2 == false){
                 System.out.println(nombre.substring(0, nombre.length()) + numeroMatricula.substring(0, 4));
             }
-            if(error2 == 1){
+            if(error2 == true){
                 System.out.println(nombre.substring(0, nombre.length()) + numeroMatricula.substring(0, numeroMatricula.length()));
             }
         }
         else{
-            if(error2 == 0){
+            if(error2 == false){
                 System.out.println(nombre.substring(0, 3) + numeroMatricula.substring(0, 4));
             }
-            if(error2 == 1){
+            if(error2 == true){
                 System.out.println(nombre.substring(0, 3) + numeroMatricula.substring(0, numeroMatricula.length()));
             }
         }

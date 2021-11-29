@@ -11,12 +11,12 @@ public class ClaseDam {
     /**
      * Crea una clase
      */
-    public ClaseDam(int maximoNumeroALumnos) {
+    public ClaseDam(int maximoNumeroAlumnos) {
         tutor = "desconocido";
         aula = "desconocida";
         centro = "desconocido";
         alumnos = new ArrayList<Alumno>();
-        capacidad = maximoNumeroALumnos;
+        capacidad = maximoNumeroAlumnos;
     }
 
     /**
